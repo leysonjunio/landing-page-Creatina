@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family:"Bebas Neue", sans-serif;
 }
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
@@ -130,10 +131,21 @@ body{
 footer{
     background-color:black;
     width: 100%;
-    height: auto;
+    height:auto;
+    border-top: 3px solid #fff;
+    display: flex;
 }
 footer .botoes{
     padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.botoes > h3{
+    color: #fff;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 footer button{
     width: 45px;
@@ -144,16 +156,75 @@ footer button{
     color: #fff;
     cursor: pointer;
     font-size: 24px;
+    margin: 5px;
 }
 button:hover {
     background-color: #fff;
     color: #202020;
 }
 .formaPagamento{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 100vh;
 }
+.formaPagamento > h3{
+    padding: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
 .email{
-    border-left: #fff;
+    justify-content: flex-end;
+    width: 400px;
+    padding: 20px;
+    color: #000000;
+    border-left: 1px solid #ffffff81;
+}
+.email  h2 , p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.email h2{
+    padding-top: 15px;
+    font-size: 3rem;    
+    line-height: 45px;
+}
+.email p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.input-box{
+    padding: 10px;
+}
+.input-box input{
+    background-color: #202020;
+    display: block;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+}
+.input-box input:focus-within{
+    background-color: #fff;
+}
+.btn-Enviar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.btn-Enviar > button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 70px;
 }
 .barraMensagem{
     width:100%;
@@ -164,11 +235,11 @@ button:hover {
 .barraMensagem > p {
     color: #1f1e1e;
     font-size: 15px;
-    animation: mensagem 9s linear infinite;
+    animation: mensagem 12s linear infinite;
 }
 @keyframes mensagem {
     0%{
-        transform: translateX(-20%);
+        transform: translateX(-60%);
     }
     100%{
        transform: translateX(100%);
